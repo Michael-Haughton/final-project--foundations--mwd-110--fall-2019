@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'img';
+@import 'nav';
+
+html {
+   background-color: #4a4949;
+   width: $width--desktop;
+
+   @media (max-width: $width--desktop) {
+      width: $width--tablet;
+   }
+
+   @media (max-width: $width--tablet) {
+      width: $width--mobile;
+   }
+}
+
+body {
+   margin: 0;
+}
+
+header {
+   background: inherit;
+}
+
+header::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+.title-one {
+   float: left;
+   padding: 10px 0;
+}
+
+h1 {
+   font-family: $font-stack--heading;
+   color: $font-color;
+   font-size: $font-size--headers;
+   padding-left: 15px;
+}
+
+main {
+   margin: 100px 25px;
+}
+
+h2,
+h3,
+p {
+   font-family: $font-stack--main;
+   color: $font-color;
+   font-size: $font-size--main;
+   margin: 20px auto 0;
+}
+
+.art-work {
+   font-family: $font-stack--main;
+   color: $font-color;
+   font-size: $font-size--main;
+   margin: 10px auto;
+}
